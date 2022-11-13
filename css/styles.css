@@ -1,0 +1,133 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: hsl(30, 38%, 92%);
+}
+
+/* Containers Start */
+
+.world-container {
+  display: flex;
+  height: 100%;
+  background-color: hsl(30, 38%, 92%);
+  justify-content: center;
+  align-items: center;
+
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.box-a {
+  background-image: url("../images/image-product-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.box-b {
+  width: 240px;
+  background-color: hsl(0, 0%, 100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 30px;
+}
+
+/* Containers End */
+
+/* Text Content Start */
+
+h5 {
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+  margin-top: 10px;
+}
+
+h1 {
+  color: hsl(212, 21%, 14%);
+  font-family: 'Fraunces', serif;
+  line-height: 1;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: hsl(228, 12%, 48%);
+}
+
+.new-price {
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  vertical-align: sub;
+}
+
+.old-price {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  margin-left: 15px;
+  vertical-align: text-bottom;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  border: 0;
+  padding: 16px;
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+}
+
+button:active {
+  background-color: hsl(158, 36%,20%);
+}
+
+.cart-icon {
+  vertical-align: sub;
+}
+
+.button-text {
+  margin-left: 5px;
+}
+
+/* Text Content End */
+
+/* CSS for Mobile Devices Start */
+
+@media screen and (max-width:700px) {
+  .world-container {
+    height: auto;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .box-a {
+    background-image: url("../images/image-product-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 355px;
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .box-b {
+    border-radius: 0 0 10px 10px;
+    width: 295px;
+  }
+}
+
+h5 {
+  margin-top: 0;
+}
+
+/* CSS for Mobile Devices End */
