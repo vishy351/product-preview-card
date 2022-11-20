@@ -74,6 +74,7 @@ p {
   color: hsl(228, 12%, 48%);
   margin-left: 15px;
   vertical-align: text-bottom;
+  text-decoration: line-through;
 }
 
 button {
@@ -83,6 +84,11 @@ button {
   padding: 16px;
   color: hsl(0, 0%, 100%);
   width: 100%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(158, 36%,20%);
 }
 
 button:active {
