@@ -13,13 +13,13 @@ html, body {
   background-color: hsl(30, 38%, 92%);
   justify-content: center;
   align-items: center;
+  padding: 20px;
 
 }
 
 .wrapper {
   display: flex;
   flex-direction: row;
-  padding: 20px;
 }
 
 .box-a {
